@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/optHome"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        />
+
+    <item
+        android:id="@+id/optProfile"
+        android:title="Profile"
+        android:icon="@drawable/baseline_person_24"
+        />
+
+    <item
+        android:id="@+id/optFaculty"
+        android:title="Faculty"
+        android:icon="@drawable/baseline_people_alt_24"/>
+
+    <item
+        android:id="@+id/optCgpa"
+        android:title="CGPA"
+        android:icon="@drawable/baseline_calculate_24"/>
+
+    <item
+        android:id="@+id/optAbout"
+        android:title="About"
+        android:icon="@drawable/baseline_info_24"/>
+
+
+</menu>
