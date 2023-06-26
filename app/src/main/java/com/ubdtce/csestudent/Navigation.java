@@ -10,8 +10,12 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -36,6 +40,7 @@ public class Navigation extends AppCompatActivity {
 
         loadFragment(new AFragment());
 
+
         navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -44,16 +49,16 @@ public class Navigation extends AppCompatActivity {
                 if(id==R.id.optHome){
                     loadFragment(new AFragment());
                 } else if (id==R.id.optProfile) {
-
+                    loadFragment(new BaFragment());
                 }
                  else if (id==R.id.optFaculty) {
-
+                    loadFragment(new CFragment());
                 }
                  else if (id==R.id.optCgpa) {
-
+                    loadFragment(new DFragment());
                 }
                  else{
-
+                    loadFragment(new EFragment());
                 }
 
                  navigationBar.closeDrawer(GravityCompat.START);
@@ -63,8 +68,9 @@ public class Navigation extends AppCompatActivity {
             }
         });
 
-    }
 
+
+    }
     @Override
     public void onBackPressed(){
         if(navigationBar.isDrawerOpen(GravityCompat.START)){
