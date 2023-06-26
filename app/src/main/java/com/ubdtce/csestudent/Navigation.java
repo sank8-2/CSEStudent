@@ -22,6 +22,9 @@ import com.google.android.material.navigation.NavigationView;
 public class Navigation extends AppCompatActivity {
 
     DrawerLayout navigationBar;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +42,6 @@ public class Navigation extends AppCompatActivity {
         toggle.syncState();
 
         loadFragment(new AFragment());
-
 
         navView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -86,5 +88,17 @@ public class Navigation extends AppCompatActivity {
 
         ft.add(R.id.container, fragment);
         ft.commit();
+    }
+
+    public void goToLogin(View view) {
+
+        SharedPreferences preferences=getSharedPreferences("Login",MODE_PRIVATE);
+        SharedPreferences.Editor editor=preferences.edit();
+
+        Intent i=new Intent(Navigation.this,Signin.class);
+        editor.putBoolean("flag",false);
+        editor.apply();
+        startActivity(i);
+        finish();
     }
 }
