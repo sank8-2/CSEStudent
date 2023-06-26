@@ -101,4 +101,8 @@ public class Navigation extends AppCompatActivity {
         startActivity(i);
         finish();
     }
+
+    public void goToEdit(View view) {
+        loadFragment(new BbFragment());
+    }
 }
