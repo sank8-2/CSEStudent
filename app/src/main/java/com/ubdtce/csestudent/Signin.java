@@ -3,6 +3,7 @@ package com.ubdtce.csestudent;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -38,8 +39,13 @@ public class Signin extends AppCompatActivity {
                 String sUsn=b.getString("USN");
                 String sPass=b.getString("Pass");
 
+                SharedPreferences preferences=getSharedPreferences("Login",MODE_PRIVATE);
+                SharedPreferences.Editor editor=preferences.edit();
+
                 if(sUsn.toString().equals(USN.getText().toString()) && sPass.toString().equals(pass.getText().toString())){
                         Intent i=new Intent(Signin.this,Navigation.class);
+                        editor.putBoolean("flag",true);
+                        editor.apply();
                         startActivity(i);
                         finish();
                 }
