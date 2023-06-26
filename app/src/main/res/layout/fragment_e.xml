@@ -1,14 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EFragment">
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    tools:context=".EFragment"
+    android:padding="30dp"
+    >
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="ABOUT"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CSE Student"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CSE Student Android Application is developed to help the engineering students studying under UBDTCE,CSE branch. This app provides various features which students can use in their studies or academic communication"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact: sankethkumarbg1995@gmail.com + shradhapokle02@gmail.com"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        />
+
 
 </LinearLayout>
