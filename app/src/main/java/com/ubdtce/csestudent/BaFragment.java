@@ -10,6 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class BaFragment extends Fragment{
     public BaFragment() {
@@ -21,7 +24,16 @@ public class BaFragment extends Fragment{
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        return inflater.inflate(R.layout.fragment_ba, container, false);
+        View inflateIt = inflater.inflate(R.layout.fragment_ba, container, false);
+
+
+
+        TextView textView=(TextView) inflateIt.findViewById(R.id.name);
+        textView.setText("Sanketh");
+        return inflateIt;
+    }
+
+    public void setText(String text){
 
     }
 }

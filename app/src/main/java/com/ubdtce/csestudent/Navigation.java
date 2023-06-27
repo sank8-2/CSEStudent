@@ -45,6 +45,7 @@ public class Navigation extends AppCompatActivity {
         TextView sname=(TextView) headerView.findViewById(R.id.name);
 
 
+
         SharedPreferences usn=getSharedPreferences("USN",MODE_PRIVATE);
         String USN = usn.getString("USNID","");
 
