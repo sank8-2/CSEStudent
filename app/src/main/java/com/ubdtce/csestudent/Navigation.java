@@ -15,7 +15,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -23,7 +22,8 @@ public class Navigation extends AppCompatActivity {
 
     DrawerLayout navigationBar;
 
-
+    Fragment fragmentbb=new BbFragment();
+    Fragment fragmentbc=new BcFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,17 +75,23 @@ public class Navigation extends AppCompatActivity {
     }
     @Override
     public void onBackPressed(){
+
+        FragmentManager f=getSupportFragmentManager();
+        Fragment fm = f.findFragmentById(R.id.container);
+
         if(navigationBar.isDrawerOpen(GravityCompat.START)){
             navigationBar.closeDrawer(GravityCompat.START);
-        }else {
+        }else if(fm.equals(fragmentbb)){
+            loadFragment(new BaFragment());
+        }else if(fm.equals(fragmentbc)){
+            loadFragment(fragmentbb);
+        }else
             super.onBackPressed();
-        }
     }
 
     private void loadFragment(Fragment fragment) {
         FragmentManager fm=getSupportFragmentManager();
         FragmentTransaction ft=fm.beginTransaction();
-
         ft.replace(R.id.container, fragment);
         ft.commit();
     }
@@ -103,10 +109,14 @@ public class Navigation extends AppCompatActivity {
     }
 
     public void goToEdit(View view) {
-        loadFragment(new BbFragment());
+        loadFragment(fragmentbb);
     }
 
     public void goToChange(View view) {
-        loadFragment(new BcFragment());
+        loadFragment(fragmentbc);
+    }
+
+    public void goToProfile(View view) {
+        loadFragment(new BaFragment());
     }
 }

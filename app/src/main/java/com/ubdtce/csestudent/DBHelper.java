@@ -1,10 +1,14 @@
 package com.ubdtce.csestudent;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
+
+import java.util.ArrayList;
 
 public class DBHelper extends SQLiteOpenHelper {
 
@@ -31,6 +35,39 @@ public class DBHelper extends SQLiteOpenHelper {
                 +KEY_EMAIL+" TEXT,"
                 +KEY_PHONE+" TEXT,"
                 +KEY_PASS+" TEXT)");
+    }
+
+
+    public void addStudent(String name,String usn,String email,String phone,String pass){
+        SQLiteDatabase db= this.getWritableDatabase();
+
+        ContentValues values=new ContentValues();
+        values.put(KEY_NAME,name);
+        values.put(KEY_USN,usn);
+        values.put(KEY_EMAIL,email);
+        values.put(KEY_PHONE,phone);
+        values.put(KEY_PASS,pass);
+
+        db.insert(TBL_NAME,null,values);
+    }
+
+    public ArrayList<StudentModel> fetchStudent(){
+        SQLiteDatabase db=this.getReadableDatabase();
+
+        Cursor cursor=db.rawQuery("SELECT * FROM "+TBL_NAME,null);
+
+        ArrayList<StudentModel> arrStudents = new ArrayList<>();
+
+        while(cursor.moveToNext()) {
+            StudentModel model = new StudentModel();
+            model.name = cursor.getString(0);
+            model.usn = cursor.getString(1);
+            model.email = cursor.getString(2);
+            model.phone = cursor.getString(3);
+            model.pass = cursor.getString(4);
+            arrStudents.add(model);
+        }
+        return arrStudents;
     }
 
     @Override

@@ -20,9 +20,9 @@ public class RegSuccess extends AppCompatActivity {
         successTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle b=getIntent().getExtras();
+//                Bundle b=getIntent().getExtras();
                 Intent i=new Intent(RegSuccess.this,Signin.class);
-                i.putExtras(b);
+//                i.putExtras(b);
                 startActivity(i);
                 finish();
             }
