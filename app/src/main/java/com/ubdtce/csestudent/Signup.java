@@ -38,12 +38,10 @@ public class Signup extends AppCompatActivity {
                         pass.getText().toString().equals(conPass.getText().toString()) &&
                         validatePassword(pass.getText().toString())) {
                     Toast.makeText(getBaseContext(), "Successful Sign UP", Toast.LENGTH_LONG).show();
-                    //Bundle b = new Bundle();
-//                    b.putString("USN", username.getText().toString());
-//                    b.putString("Pass", pass.getText().toString());
                     Intent i = new Intent(Signup.this, RegSuccess.class);
-//                    i.putExtras(b);
+
                     dbhelp.addStudent(name.getText().toString(),username.getText().toString(),email.getText().toString(),phone.getText().toString(),pass.getText().toString());
+
                     startActivity(i);
                     finish();
                 }

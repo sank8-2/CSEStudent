@@ -70,6 +70,27 @@ public class DBHelper extends SQLiteOpenHelper {
         return arrStudents;
     }
 
+    public ArrayList<StudentModel> fetchLoggedStudent(String USN){
+        SQLiteDatabase db=this.getReadableDatabase();
+
+        Cursor cursor=db.rawQuery("SELECT * FROM "+TBL_NAME +" WHERE "+KEY_USN+"=\""+USN+"\"",null);
+
+        ArrayList<StudentModel> arrStudents = new ArrayList<>();
+
+        while(cursor.moveToNext()) {
+            StudentModel model = new StudentModel();
+            model.name = cursor.getString(0);
+            model.usn = cursor.getString(1);
+            model.email = cursor.getString(2);
+            model.phone = cursor.getString(3);
+            model.pass = cursor.getString(4);
+            arrStudents.add(model);
+        }
+        return arrStudents;
+    }
+
+
+
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS "+ TBL_NAME);

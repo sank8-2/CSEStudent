@@ -45,29 +45,33 @@ public class Signin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                StudentModel model=new StudentModel();
                 ArrayList<StudentModel> arrStudent = dbHelp.fetchStudent();
 
-                //Bundle b=getIntent().getExtras();
-//                String sUsn=b.getString("USN");
-//                String sPass=b.getString("Pass");
-//                String sUsn=arrStudent.get(0).usn;
-//                String sPass=arrStudent.get(0).pass;
                 int iter;
 
                 SharedPreferences preferences=getSharedPreferences("Login",MODE_PRIVATE);
                 SharedPreferences.Editor editor=preferences.edit();
+
+                //SharedPreferences usn=getSharedPreferences("USN",MODE_PRIVATE);
+                //SharedPreferences.Editor edit=usn.edit();
+
                 for(iter=0;iter<arrStudent.size();iter++){
-                if(arrStudent.get(iter).usn.equals(USN.getText().toString()) && arrStudent.get(iter).pass.equals(pass.getText().toString())){
+                    if(arrStudent.get(iter).usn.equals(USN.getText().toString()) && arrStudent.get(iter).pass.equals(pass.getText().toString())){
                         Intent i=new Intent(Signin.this,Navigation.class);
+                        //String myUsn= USN.getText().toString();
+
+                        //edit.putString("USNID",myUsn);
+                        //edit.apply();
+
                         editor.putBoolean("flag",true);
                         editor.apply();
+
                         startActivity(i);
                         finish();
                     }
                 }
                 if(iter>arrStudent.size()){
-                    Toast.makeText(getBaseContext(), "Login Unsuccessfull",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getBaseContext(), "Login Unsuccessful",Toast.LENGTH_LONG).show();
                 }
             }
         });

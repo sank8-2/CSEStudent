@@ -15,8 +15,11 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
+
+import java.util.ArrayList;
 
 public class Navigation extends AppCompatActivity {
 
@@ -33,7 +36,20 @@ public class Navigation extends AppCompatActivity {
         navigationBar=findViewById(R.id.navigationBar);
         NavigationView navView=findViewById(R.id.navView);
         Toolbar toolbar=findViewById(R.id.toolbar);
+        //TextView name,sUsn;
+        //name=findViewById(R.id.name);
+        //sUsn=findViewById(R.id.sUsn);
 
+        //SharedPreferences usn=getSharedPreferences("USN",MODE_PRIVATE);
+        //String USN = usn.getString("USNID","");
+
+        //DBHelper dbHelp=new DBHelper(this);
+        //ArrayList<StudentModel> arrStudent = dbHelp.fetchLoggedStudent(USN);
+
+        //name.setText(arrStudent.get(0).name);
+        //sUsn.setText(arrStudent.get(0).usn);
+
+        //sUsn.setText("Google");
         setSupportActionBar(toolbar);
 
         ActionBarDrawerToggle toggle=new ActionBarDrawerToggle(this,navigationBar,toolbar,R.string.openDrawer,R.string.closeDrawer);
