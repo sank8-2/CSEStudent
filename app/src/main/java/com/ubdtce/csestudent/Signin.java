@@ -52,16 +52,16 @@ public class Signin extends AppCompatActivity {
                 SharedPreferences preferences=getSharedPreferences("Login",MODE_PRIVATE);
                 SharedPreferences.Editor editor=preferences.edit();
 
-                //SharedPreferences usn=getSharedPreferences("USN",MODE_PRIVATE);
-                //SharedPreferences.Editor edit=usn.edit();
+                SharedPreferences usn=getSharedPreferences("USN",MODE_PRIVATE);
+                SharedPreferences.Editor edit=usn.edit();
 
                 for(iter=0;iter<arrStudent.size();iter++){
                     if(arrStudent.get(iter).usn.equals(USN.getText().toString()) && arrStudent.get(iter).pass.equals(pass.getText().toString())){
                         Intent i=new Intent(Signin.this,Navigation.class);
-                        //String myUsn= USN.getText().toString();
+                        String myUsn= USN.getText().toString();
 
-                        //edit.putString("USNID",myUsn);
-                        //edit.apply();
+                        edit.putString("USNID",myUsn);
+                        edit.apply();
 
                         editor.putBoolean("flag",true);
                         editor.apply();

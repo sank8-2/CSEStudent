@@ -19,6 +19,8 @@ import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 public class Navigation extends AppCompatActivity {
@@ -35,21 +37,23 @@ public class Navigation extends AppCompatActivity {
 
         navigationBar=findViewById(R.id.navigationBar);
         NavigationView navView=findViewById(R.id.navView);
+
+        View headerView=navView.getHeaderView(0);
+        TextView sUsn=(TextView) headerView.findViewById(R.id.sUsn);
+
         Toolbar toolbar=findViewById(R.id.toolbar);
-        //TextView name,sUsn;
-        //name=findViewById(R.id.name);
-        //sUsn=findViewById(R.id.sUsn);
+        TextView sname=(TextView) headerView.findViewById(R.id.name);
 
-        //SharedPreferences usn=getSharedPreferences("USN",MODE_PRIVATE);
-        //String USN = usn.getString("USNID","");
 
-        //DBHelper dbHelp=new DBHelper(this);
-        //ArrayList<StudentModel> arrStudent = dbHelp.fetchLoggedStudent(USN);
+        SharedPreferences usn=getSharedPreferences("USN",MODE_PRIVATE);
+        String USN = usn.getString("USNID","");
 
-        //name.setText(arrStudent.get(0).name);
-        //sUsn.setText(arrStudent.get(0).usn);
+        DBHelper dbHelp=new DBHelper(this);
+        ArrayList<StudentModel> arrStudent = dbHelp.fetchLoggedStudent(USN);
 
-        //sUsn.setText("Google");
+        sname.setText(arrStudent.get(0).name);
+        sUsn.setText(arrStudent.get(0).usn);
+
         setSupportActionBar(toolbar);
 
         ActionBarDrawerToggle toggle=new ActionBarDrawerToggle(this,navigationBar,toolbar,R.string.openDrawer,R.string.closeDrawer);
