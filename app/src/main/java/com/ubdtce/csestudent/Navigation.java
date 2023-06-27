@@ -30,12 +30,12 @@ public class Navigation extends AppCompatActivity {
     Fragment fragmentbb=new BbFragment();
     Fragment fragmentbc=new BcFragment();
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
-
-        navigationBar=findViewById(R.id.navigationBar);
         NavigationView navView=findViewById(R.id.navView);
 
         View headerView=navView.getHeaderView(0);
@@ -51,6 +51,7 @@ public class Navigation extends AppCompatActivity {
 
         DBHelper dbHelp=new DBHelper(this);
         ArrayList<StudentModel> arrStudent = dbHelp.fetchLoggedStudent(USN);
+        navigationBar=findViewById(R.id.navigationBar);
 
         sname.setText(arrStudent.get(0).name);
         sUsn.setText(arrStudent.get(0).usn);
@@ -113,6 +114,22 @@ public class Navigation extends AppCompatActivity {
     private void loadFragment(Fragment fragment) {
         FragmentManager fm=getSupportFragmentManager();
         FragmentTransaction ft=fm.beginTransaction();
+
+        SharedPreferences usn=getSharedPreferences("USN",MODE_PRIVATE);
+        String USN = usn.getString("USNID","");
+
+        DBHelper dbHelp=new DBHelper(this);
+        ArrayList<StudentModel> arrStudent = dbHelp.fetchLoggedStudent(USN);
+
+        Bundle bundle=new Bundle();
+        bundle.putString("name",arrStudent.get(0).name);
+        bundle.putString("usn",arrStudent.get(0).usn);
+        bundle.putString("email",arrStudent.get(0).email);
+        bundle.putString("phone",arrStudent.get(0).phone);
+        bundle.putString("pass",arrStudent.get(0).pass);
+
+        fragment.setArguments(bundle);
+
         ft.replace(R.id.container, fragment);
         ft.commit();
     }
