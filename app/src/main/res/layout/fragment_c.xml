@@ -1,14 +1,448 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".CFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:padding="5dp"
+     >
 
-</FrameLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:gravity="center"
+         >
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardElevation="5dp"
+             app:cardCornerRadius="5dp"
+             app:cardUseCompatPadding="true"
+             >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shreedhara K S"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Designation: Head of the department(HOD)"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qualification:"
+                    android:textSize="20sp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnCall1"
+                        android:text="Call"
+                        android:textSize="10sp"
+                        />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/btnCall1"
+                        android:layout_marginLeft="10dp"
+                        android:text="Email"
+                        android:textSize="10sp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardElevation="5dp"
+             app:cardCornerRadius="5dp"
+             app:cardUseCompatPadding="true"
+             >
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Shreedhara K S"
+                     android:textStyle="bold"
+                     android:textSize="24sp"
+                     />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Designation: Head of the department(HOD)"
+                     android:textSize="20sp"
+                     />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Qualification:"
+                     android:textSize="20sp"
+                     />
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+                     <Button
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/btnCall2"
+                         android:text="Call"
+                         android:textSize="10sp"
+                         />
+
+                     <Button
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_toRightOf="@+id/btnCall2"
+                         android:layout_marginLeft="10dp"
+                         android:text="Email"
+                         android:textSize="10sp"
+                         />
+                 </RelativeLayout>
+             </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardElevation="5dp"
+             app:cardCornerRadius="5dp"
+             app:cardUseCompatPadding="true"
+             >
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Shreedhara K S"
+                     android:textStyle="bold"
+                     android:textSize="24sp"
+                     />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Designation: Head of the department(HOD)"
+                     android:textSize="20sp"
+                     />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Qualification:"
+                     android:textSize="20sp"
+                     />
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+                     <Button
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/btnCall3"
+                         android:text="Call"
+                         android:textSize="10sp"
+                         />
+
+                     <Button
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_toRightOf="@+id/btnCall3"
+                         android:layout_marginLeft="10dp"
+                         android:text="Email"
+                         android:textSize="10sp"
+                         />
+                 </RelativeLayout>
+             </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardElevation="5dp"
+             app:cardCornerRadius="5dp"
+             app:cardUseCompatPadding="true"
+             >
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Shreedhara K S"
+                     android:textStyle="bold"
+                     android:textSize="24sp"
+                     />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Designation: Head of the department(HOD)"
+                     android:textSize="20sp"
+                     />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Qualification:"
+                     android:textSize="20sp"
+                     />
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+                     <Button
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/btnCall4"
+                         android:text="Call"
+                         android:textSize="10sp"
+                         />
+
+                     <Button
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_toRightOf="@+id/btnCall4"
+                         android:layout_marginLeft="10dp"
+                         android:text="Email"
+                         android:textSize="10sp"
+                         />
+                 </RelativeLayout>
+             </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardElevation="5dp"
+             app:cardCornerRadius="5dp"
+             app:cardUseCompatPadding="true"
+             >
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Shreedhara K S"
+                     android:textStyle="bold"
+                     android:textSize="24sp"
+                     />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Designation: Head of the department(HOD)"
+                     android:textSize="20sp"
+                     />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Qualification:"
+                     android:textSize="20sp"
+                     />
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+                     <Button
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/btnCall5"
+                         android:text="Call"
+                         android:textSize="10sp"
+                         />
+
+                     <Button
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_toRightOf="@+id/btnCall5"
+                         android:layout_marginLeft="10dp"
+                         android:text="Email"
+                         android:textSize="10sp"
+                         />
+                 </RelativeLayout>
+             </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardElevation="5dp"
+             app:cardCornerRadius="5dp"
+             app:cardUseCompatPadding="true"
+             >
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Shreedhara K S"
+                     android:textStyle="bold"
+                     android:textSize="24sp"
+                     />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Designation: Head of the department(HOD)"
+                     android:textSize="20sp"
+                     />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Qualification:"
+                     android:textSize="20sp"
+                     />
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+                     <Button
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/btnCall6"
+                         android:text="Call"
+                         android:textSize="10sp"
+                         />
+
+                     <Button
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_toRightOf="@+id/btnCall6"
+                         android:layout_marginLeft="10dp"
+                         android:text="Email"
+                         android:textSize="10sp"
+                         />
+                 </RelativeLayout>
+             </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardElevation="5dp"
+             app:cardCornerRadius="5dp"
+             app:cardUseCompatPadding="true"
+             >
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Shreedhara K S"
+                     android:textStyle="bold"
+                     android:textSize="24sp"
+                     />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Designation: Head of the department(HOD)"
+                     android:textSize="20sp"
+                     />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Qualification:"
+                     android:textSize="20sp"
+                     />
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+                     <Button
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/btnCall7"
+                         android:text="Call"
+                         android:textSize="10sp"
+                         />
+
+                     <Button
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_toRightOf="@+id/btnCall7"
+                         android:layout_marginLeft="10dp"
+                         android:text="Email"
+                         android:textSize="10sp"
+                         />
+                 </RelativeLayout>
+             </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+
+
+
+     </LinearLayout>
+
+ </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

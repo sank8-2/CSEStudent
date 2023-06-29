@@ -38,6 +38,7 @@ public class Navigation extends AppCompatActivity {
         setContentView(R.layout.activity_navigation);
         NavigationView navView=findViewById(R.id.navView);
 
+
         View headerView=navView.getHeaderView(0);
         TextView sUsn=(TextView) headerView.findViewById(R.id.sUsn);
 
