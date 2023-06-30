@@ -58,23 +58,36 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <Button
-                        android:layout_width="wrap_content"
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/floatingActionButton"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/btnCall1"
-                        android:text="Call"
-                        android:textSize="10sp"
-                        />
+                        android:clickable="true"
+                        android:src="@drawable/baseline_phone_24"
+                        app:fabSize="mini" />
 
-                    <Button
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/floatingActionButton2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_toRightOf="@+id/btnCall1"
-                        android:layout_marginLeft="10dp"
-                        android:text="Email"
-                        android:textSize="10sp"
-                        />
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/floatingActionButton"
+                        android:clickable="true"
+                        android:src="@drawable/baseline_email_24"
+                        app:fabSize="mini" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/floatingActionButtona"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/floatingActionButton2"
+                        android:clickable="true"
+                        android:src="@drawable/whatsapplogo"
+                        app:fabSize="mini" />
                 </RelativeLayout>
+
+
             </LinearLayout>
 
          </androidx.cardview.widget.CardView>
@@ -119,21 +132,181 @@
                      android:layout_width="match_parent"
                      android:layout_height="match_parent">
 
-                     <Button
+                     <com.google.android.material.floatingactionbutton.FloatingActionButton
+                         android:id="@+id/floatingActionButton3"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:clickable="true"
+                         android:src="@drawable/baseline_phone_24"
+                         app:fabSize="mini" />
+
+                     <com.google.android.material.floatingactionbutton.FloatingActionButton
+                         android:id="@+id/floatingActionButton4"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
-                         android:id="@+id/btnCall2"
-                         android:text="Call"
-                         android:textSize="10sp"
+                         android:layout_marginLeft="5dp"
+                         android:layout_toRightOf="@+id/floatingActionButton3"
+                         android:clickable="true"
+                         android:src="@drawable/baseline_email_24"
+                         app:fabSize="mini" />
+
+                     <com.google.android.material.floatingactionbutton.FloatingActionButton
+                         android:id="@+id/floatingActionButtonb"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="5dp"
+                         android:layout_toRightOf="@+id/floatingActionButton4"
+                         android:clickable="true"
+                         android:src="@drawable/whatsapplogo"
+                         app:fabSize="mini" />
+                 </RelativeLayout>
+             </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardElevation="5dp"
+             app:cardCornerRadius="5dp"
+             app:cardUseCompatPadding="true"
+             >
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+                 android:padding="10dp"
+                 >
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Shreedhara K S"
+                     android:textStyle="bold"
+                     android:textSize="24sp"
+                     />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Designation: Head of the department (HOD)"
+                     android:textSize="20sp"
+                     />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Qualification:"
+                     android:textSize="20sp"
+                     />
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+                     <com.google.android.material.floatingactionbutton.FloatingActionButton
+                         android:id="@+id/floatingActionButton5"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:clickable="true"
+                         android:src="@drawable/baseline_phone_24"
+                         app:fabSize="mini" />
+
+                     <com.google.android.material.floatingactionbutton.FloatingActionButton
+                         android:id="@+id/floatingActionButton6"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="5dp"
+                         android:layout_toRightOf="@+id/floatingActionButton5"
+                         android:clickable="true"
+                         android:src="@drawable/baseline_email_24"
+                         app:fabSize="mini" />
+
+                     <com.google.android.material.floatingactionbutton.FloatingActionButton
+                         android:id="@+id/floatingActionButtonc"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="5dp"
+                         android:layout_toRightOf="@+id/floatingActionButton6"
+                         android:clickable="true"
+                         android:src="@drawable/whatsapplogo"
+                         app:fabSize="mini" />
+                 </RelativeLayout>
+             </LinearLayout>
+
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardElevation="5dp"
+             app:cardCornerRadius="5dp"
+             app:cardUseCompatPadding="true"
+             >
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+                 android:padding="10dp"
+                 >
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Shreedhara K S"
+                     android:textStyle="bold"
+                     android:textSize="24sp"
+                     />
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Designation: Head of the department (HOD)"
+                     android:textSize="20sp"
+                     />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Qualification:"
+                     android:textSize="20sp"
+                     />
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent">
+
+                     <com.google.android.material.floatingactionbutton.FloatingActionButton
+                         android:id="@+id/floatingActionButton7"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:clickable="true"
+                         android:src="@drawable/baseline_phone_24"
+                         app:fabSize="mini"
                          />
 
-                     <Button
+                     <com.google.android.material.floatingactionbutton.FloatingActionButton
+                         android:id="@+id/floatingActionButton8"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
-                         android:layout_toRightOf="@+id/btnCall2"
-                         android:layout_marginLeft="10dp"
-                         android:text="Email"
-                         android:textSize="10sp"
+                         android:clickable="true"
+                         android:layout_toRightOf="@+id/floatingActionButton7"
+                         android:layout_marginLeft="5dp"
+                         android:src="@drawable/baseline_email_24"
+                         app:fabSize="mini"
+
+                         />
+
+                     <com.google.android.material.floatingactionbutton.FloatingActionButton
+                         android:id="@+id/floatingActionButtond"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:clickable="true"
+                         android:layout_toRightOf="@+id/floatingActionButton8"
+                         android:layout_marginLeft="5dp"
+                         android:src="@drawable/whatsapplogo"
+                         app:fabSize="mini"
+
                          />
                  </RelativeLayout>
              </LinearLayout>
@@ -180,22 +353,33 @@
                      android:layout_width="match_parent"
                      android:layout_height="match_parent">
 
-                     <Button
-                         android:layout_width="wrap_content"
+                     <com.google.android.material.floatingactionbutton.FloatingActionButton
+                         android:id="@+id/floatingActionButton9"
+                         android:layout_width="match_parent"
                          android:layout_height="wrap_content"
-                         android:id="@+id/btnCall3"
-                         android:text="Call"
-                         android:textSize="10sp"
-                         />
+                         android:clickable="true"
+                         android:src="@drawable/baseline_phone_24"
+                         app:fabSize="mini" />
 
-                     <Button
+                     <com.google.android.material.floatingactionbutton.FloatingActionButton
+                         android:id="@+id/floatingActionButton10"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
-                         android:layout_toRightOf="@+id/btnCall3"
-                         android:layout_marginLeft="10dp"
-                         android:text="Email"
-                         android:textSize="10sp"
-                         />
+                         android:layout_marginLeft="5dp"
+                         android:layout_toRightOf="@+id/floatingActionButton9"
+                         android:clickable="true"
+                         android:src="@drawable/baseline_email_24"
+                         app:fabSize="mini" />
+
+                     <com.google.android.material.floatingactionbutton.FloatingActionButton
+                         android:id="@+id/floatingActionButtone"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="5dp"
+                         android:layout_toRightOf="@+id/floatingActionButton10"
+                         android:clickable="true"
+                         android:src="@drawable/whatsapplogo"
+                         app:fabSize="mini" />
                  </RelativeLayout>
              </LinearLayout>
 
@@ -241,22 +425,33 @@
                      android:layout_width="match_parent"
                      android:layout_height="match_parent">
 
-                     <Button
-                         android:layout_width="wrap_content"
+                     <com.google.android.material.floatingactionbutton.FloatingActionButton
+                         android:id="@+id/floatingActionButton11"
+                         android:layout_width="match_parent"
                          android:layout_height="wrap_content"
-                         android:id="@+id/btnCall4"
-                         android:text="Call"
-                         android:textSize="10sp"
-                         />
+                         android:clickable="true"
+                         android:src="@drawable/baseline_phone_24"
+                         app:fabSize="mini" />
 
-                     <Button
+                     <com.google.android.material.floatingactionbutton.FloatingActionButton
+                         android:id="@+id/floatingActionButton12"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
-                         android:layout_toRightOf="@+id/btnCall4"
-                         android:layout_marginLeft="10dp"
-                         android:text="Email"
-                         android:textSize="10sp"
-                         />
+                         android:layout_marginLeft="5dp"
+                         android:layout_toRightOf="@+id/floatingActionButton11"
+                         android:clickable="true"
+                         android:src="@drawable/baseline_email_24"
+                         app:fabSize="mini" />
+
+                     <com.google.android.material.floatingactionbutton.FloatingActionButton
+                         android:id="@+id/floatingActionButtonf"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="5dp"
+                         android:layout_toRightOf="@+id/floatingActionButton12"
+                         android:clickable="true"
+                         android:src="@drawable/whatsapplogo"
+                         app:fabSize="mini" />
                  </RelativeLayout>
              </LinearLayout>
 
@@ -302,144 +497,33 @@
                      android:layout_width="match_parent"
                      android:layout_height="match_parent">
 
-                     <Button
+                     <com.google.android.material.floatingactionbutton.FloatingActionButton
+                         android:id="@+id/floatingActionButton13"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:clickable="true"
+                         android:src="@drawable/baseline_phone_24"
+                         app:fabSize="mini" />
+
+                     <com.google.android.material.floatingactionbutton.FloatingActionButton
+                         android:id="@+id/floatingActionButton14"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
-                         android:id="@+id/btnCall5"
-                         android:text="Call"
-                         android:textSize="10sp"
-                         />
+                         android:layout_marginLeft="5dp"
+                         android:layout_toRightOf="@+id/floatingActionButton13"
+                         android:clickable="true"
+                         android:src="@drawable/baseline_email_24"
+                         app:fabSize="mini" />
 
-                     <Button
+                     <com.google.android.material.floatingactionbutton.FloatingActionButton
+                         android:id="@+id/floatingActionButtong"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
-                         android:layout_toRightOf="@+id/btnCall5"
-                         android:layout_marginLeft="10dp"
-                         android:text="Email"
-                         android:textSize="10sp"
-                         />
-                 </RelativeLayout>
-             </LinearLayout>
-
-         </androidx.cardview.widget.CardView>
-
-         <androidx.cardview.widget.CardView
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             app:cardElevation="5dp"
-             app:cardCornerRadius="5dp"
-             app:cardUseCompatPadding="true"
-             >
-
-             <LinearLayout
-                 android:layout_width="match_parent"
-                 android:layout_height="match_parent"
-                 android:orientation="vertical"
-                 android:padding="10dp"
-                 >
-
-                 <TextView
-                     android:layout_width="match_parent"
-                     android:layout_height="wrap_content"
-                     android:text="Shreedhara K S"
-                     android:textStyle="bold"
-                     android:textSize="24sp"
-                     />
-
-                 <TextView
-                     android:layout_width="match_parent"
-                     android:layout_height="wrap_content"
-                     android:text="Designation: Head of the department (HOD)"
-                     android:textSize="20sp"
-                     />
-                 <TextView
-                     android:layout_width="wrap_content"
-                     android:layout_height="wrap_content"
-                     android:text="Qualification:"
-                     android:textSize="20sp"
-                     />
-
-                 <RelativeLayout
-                     android:layout_width="match_parent"
-                     android:layout_height="match_parent">
-
-                     <Button
-                         android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:id="@+id/btnCall6"
-                         android:text="Call"
-                         android:textSize="10sp"
-                         />
-
-                     <Button
-                         android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:layout_toRightOf="@+id/btnCall6"
-                         android:layout_marginLeft="10dp"
-                         android:text="Email"
-                         android:textSize="10sp"
-                         />
-                 </RelativeLayout>
-             </LinearLayout>
-
-         </androidx.cardview.widget.CardView>
-
-         <androidx.cardview.widget.CardView
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             app:cardElevation="5dp"
-             app:cardCornerRadius="5dp"
-             app:cardUseCompatPadding="true"
-             >
-
-             <LinearLayout
-                 android:layout_width="match_parent"
-                 android:layout_height="match_parent"
-                 android:orientation="vertical"
-                 android:padding="10dp"
-                 >
-
-                 <TextView
-                     android:layout_width="match_parent"
-                     android:layout_height="wrap_content"
-                     android:text="Shreedhara K S"
-                     android:textStyle="bold"
-                     android:textSize="24sp"
-                     />
-
-                 <TextView
-                     android:layout_width="match_parent"
-                     android:layout_height="wrap_content"
-                     android:text="Designation: Head of the department (HOD)"
-                     android:textSize="20sp"
-                     />
-                 <TextView
-                     android:layout_width="wrap_content"
-                     android:layout_height="wrap_content"
-                     android:text="Qualification:"
-                     android:textSize="20sp"
-                     />
-
-                 <RelativeLayout
-                     android:layout_width="match_parent"
-                     android:layout_height="match_parent">
-
-                     <Button
-                         android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:id="@+id/btnCall7"
-                         android:text="Call"
-                         android:textSize="10sp"
-                         />
-
-                     <Button
-                         android:layout_width="wrap_content"
-                         android:layout_height="wrap_content"
-                         android:layout_toRightOf="@+id/btnCall7"
-                         android:layout_marginLeft="10dp"
-                         android:text="Email"
-                         android:textSize="10sp"
-                         />
+                         android:layout_marginLeft="5dp"
+                         android:layout_toRightOf="@+id/floatingActionButton14"
+                         android:clickable="true"
+                         android:src="@drawable/whatsapplogo"
+                         app:fabSize="mini" />
                  </RelativeLayout>
              </LinearLayout>
 
