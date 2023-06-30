@@ -13,6 +13,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -157,6 +158,23 @@ public class Navigation extends AppCompatActivity {
 
     }
 
+    public void dial(){
+        Intent intent=new Intent(Intent.ACTION_DIAL);
+        intent.setData(Uri.parse("tel:9448009306"));
+        startActivity(intent);
+    }
+
+    public void email(){
+        Intent intent=new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:shradhapokle02@gmail.com"));
+        startActivity(intent);
+    }
+
+    public void whatsapp(){
+        Intent intent=new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=+919448009306"));
+        startActivity(intent);
+    }
     public void goToEdit() {
         loadFragment(fragmentbb);
     }
