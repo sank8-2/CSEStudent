@@ -90,6 +90,24 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
 
+    public void updateStudent(ContentValues contentValues){
+        SQLiteDatabase db=this.getWritableDatabase();
+
+        /*ContentValues cv= new ContentValues();
+        *//*cv.put(KEY_PASS,stuMod.pass);
+        cv.put(KEY_PHONE,stuMod.phone);
+        cv.put(KEY_EMAIL,stuMod.email);*//*
+
+        cv.put(KEY_PASS,"Hello");*/
+
+        db.update(TBL_NAME,contentValues,KEY_USN+"="+contentValues.get(KEY_USN),null);
+
+        Navigation Navigation = null;
+        
+        (Navigation).goToEdit();
+
+    }
+
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {

@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 
@@ -22,6 +23,15 @@ public class BaFragment extends Fragment{
         // Inflate the layout for this fragment
 
         View inflateIt = inflater.inflate(R.layout.fragment_ba, container, false);
+
+        Button btnChange = (Button) inflateIt.findViewById(R.id.btnChange);
+
+        btnChange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((Navigation)getActivity()).goToEdit();
+            }
+        });
 
         String name=null,usn=null,email=null,phone=null;
         if (getArguments() != null) {

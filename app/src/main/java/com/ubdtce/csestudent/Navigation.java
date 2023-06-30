@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.ContentValues;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -147,7 +148,13 @@ public class Navigation extends AppCompatActivity {
         finish();
     }
 
-    public void goToEdit(View view) {
+    public void receiveFragment(ContentValues contentValues){
+        DBHelper dbHelper=new DBHelper(this);
+        dbHelper.updateStudent(contentValues);
+
+    }
+
+    public void goToEdit() {
         loadFragment(fragmentbb);
     }
 

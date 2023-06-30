@@ -65,8 +65,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Edit Profile"
+        android:id="@+id/btnChange"
         android:layout_marginTop="10dp"
-        android:onClick="goToEdit"
         />
 <Button
     android:layout_width="wrap_content"
