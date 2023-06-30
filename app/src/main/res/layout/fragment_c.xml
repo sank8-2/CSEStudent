@@ -30,7 +30,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -42,7 +44,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Designation: Head of the department(HOD)"
+                    android:text="Designation: Head of the department (HOD)"
                     android:textSize="20sp"
                     />
                 <TextView
@@ -88,7 +90,9 @@
              <LinearLayout
                  android:layout_width="match_parent"
                  android:layout_height="match_parent"
-                 android:orientation="vertical">
+                 android:orientation="vertical"
+                 android:padding="10dp"
+                 >
 
                  <TextView
                      android:layout_width="match_parent"
@@ -101,7 +105,7 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Designation: Head of the department(HOD)"
+                     android:text="Designation: Head of the department (HOD)"
                      android:textSize="20sp"
                      />
                  <TextView
@@ -147,7 +151,9 @@
              <LinearLayout
                  android:layout_width="match_parent"
                  android:layout_height="match_parent"
-                 android:orientation="vertical">
+                 android:orientation="vertical"
+                 android:padding="10dp"
+                 >
 
                  <TextView
                      android:layout_width="match_parent"
@@ -160,7 +166,7 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Designation: Head of the department(HOD)"
+                     android:text="Designation: Head of the department (HOD)"
                      android:textSize="20sp"
                      />
                  <TextView
@@ -206,7 +212,9 @@
              <LinearLayout
                  android:layout_width="match_parent"
                  android:layout_height="match_parent"
-                 android:orientation="vertical">
+                 android:orientation="vertical"
+                 android:padding="10dp"
+                 >
 
                  <TextView
                      android:layout_width="match_parent"
@@ -219,7 +227,7 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Designation: Head of the department(HOD)"
+                     android:text="Designation: Head of the department (HOD)"
                      android:textSize="20sp"
                      />
                  <TextView
@@ -265,7 +273,9 @@
              <LinearLayout
                  android:layout_width="match_parent"
                  android:layout_height="match_parent"
-                 android:orientation="vertical">
+                 android:orientation="vertical"
+                 android:padding="10dp"
+                 >
 
                  <TextView
                      android:layout_width="match_parent"
@@ -278,7 +288,7 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Designation: Head of the department(HOD)"
+                     android:text="Designation: Head of the department (HOD)"
                      android:textSize="20sp"
                      />
                  <TextView
@@ -324,7 +334,9 @@
              <LinearLayout
                  android:layout_width="match_parent"
                  android:layout_height="match_parent"
-                 android:orientation="vertical">
+                 android:orientation="vertical"
+                 android:padding="10dp"
+                 >
 
                  <TextView
                      android:layout_width="match_parent"
@@ -337,7 +349,7 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Designation: Head of the department(HOD)"
+                     android:text="Designation: Head of the department (HOD)"
                      android:textSize="20sp"
                      />
                  <TextView
@@ -383,7 +395,9 @@
              <LinearLayout
                  android:layout_width="match_parent"
                  android:layout_height="match_parent"
-                 android:orientation="vertical">
+                 android:orientation="vertical"
+                 android:padding="10dp"
+                 >
 
                  <TextView
                      android:layout_width="match_parent"
@@ -396,7 +410,7 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Designation: Head of the department(HOD)"
+                     android:text="Designation: Head of the department (HOD)"
                      android:textSize="20sp"
                      />
                  <TextView
