@@ -28,8 +28,6 @@ public class BbFragment extends Fragment {
         if (getArguments() != null) {
             name = getArguments().getString("name");
             usn = getArguments().getString("usn");
-//            email = getArguments().getString("email");
-//            phone = getArguments().getString("phone");
         }
 
         TextView showName = (TextView) inflateIt.findViewById(R.id.name);

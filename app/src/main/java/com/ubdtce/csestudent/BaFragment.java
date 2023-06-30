@@ -39,7 +39,6 @@ public class BaFragment extends Fragment{
             usn = getArguments().getString("usn");
             email = getArguments().getString("email");
             phone = getArguments().getString("phone");
-            //pass = getArguments().getString("pass");
         }
 
         TextView showName = (TextView) inflateIt.findViewById(R.id.name);

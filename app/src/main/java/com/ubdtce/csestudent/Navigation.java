@@ -150,6 +150,7 @@ public class Navigation extends AppCompatActivity {
     }
 
     public void receiveFragment(ContentValues contentValues){
+
         DBHelper dbHelper=new DBHelper(this);
 
         dbHelper.updateStudent(contentValues);
