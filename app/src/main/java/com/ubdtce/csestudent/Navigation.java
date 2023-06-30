@@ -14,6 +14,7 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -150,6 +151,7 @@ public class Navigation extends AppCompatActivity {
 
     public void receiveFragment(ContentValues contentValues){
         DBHelper dbHelper=new DBHelper(this);
+
         dbHelper.updateStudent(contentValues);
 
     }
@@ -162,7 +164,7 @@ public class Navigation extends AppCompatActivity {
         loadFragment(fragmentbc);
     }
 
-    public void goToProfile(View view) {
+    public void goToProfile() {
         loadFragment(new BaFragment());
     }
 }

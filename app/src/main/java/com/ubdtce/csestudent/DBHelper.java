@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 
@@ -93,18 +94,9 @@ public class DBHelper extends SQLiteOpenHelper {
     public void updateStudent(ContentValues contentValues){
         SQLiteDatabase db=this.getWritableDatabase();
 
-        /*ContentValues cv= new ContentValues();
-        *//*cv.put(KEY_PASS,stuMod.pass);
-        cv.put(KEY_PHONE,stuMod.phone);
-        cv.put(KEY_EMAIL,stuMod.email);*//*
+        String Susn=contentValues.get("USN").toString();
 
-        cv.put(KEY_PASS,"Hello");*/
-
-        db.update(TBL_NAME,contentValues,KEY_USN+"="+contentValues.get(KEY_USN),null);
-
-        Navigation Navigation = null;
-        
-        (Navigation).goToEdit();
+        db.update(TBL_NAME,contentValues,KEY_USN+"=?", new String[]{Susn});
 
     }
 

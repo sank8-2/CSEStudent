@@ -51,13 +51,12 @@ public class BcFragment extends Fragment {
                 values.put("USN",finalUsn);
                 values.put("PASSWORD",pass);
 
-                StudentModel stuMod=new StudentModel();
-                stuMod.usn= finalUsn;
-                stuMod.pass=pass;
+                showpass.setText("");
+                confpass.setText("");
 
                 if (pass.equals(conpass)) {
                     ((Navigation) getActivity()).receiveFragment(values);
-//                    ((Navigation)getActivity()).goToEdit();
+                    ((Navigation)getActivity()).goToEdit();
                 }else
                     Toast.makeText((Navigation)getActivity(), "Passwords do not Match", Toast.LENGTH_SHORT).show();
             }
