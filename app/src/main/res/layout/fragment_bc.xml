@@ -1,38 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".BcFragment"
     android:orientation="vertical"
-    android:gravity="center_horizontal"
-    android:padding="30dp"
-    >
+    android:padding="30dp">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            >
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Name Here"
         android:id="@+id/name"
+        android:padding="8dp"
         android:textSize="20sp"
         android:textAlignment="center"
-        android:layout_marginTop="10dp"
 
         />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="USN Here"
+        android:padding="8dp"
         android:id="@+id/sUsn"
         android:textSize="20sp"
         android:textAlignment="center"
-        android:layout_marginTop="10dp"
-        android:layout_margin="20dp"
+
         />
 
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -63,4 +94,6 @@
         android:text="Change"
         />
 
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
 </LinearLayout>
