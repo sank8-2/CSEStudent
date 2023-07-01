@@ -41,6 +41,7 @@ public class Navigation extends AppCompatActivity {
         setContentView(R.layout.activity_navigation);
         NavigationView navView=findViewById(R.id.navView);
 
+        showHomeFragment();
 
         View headerView=navView.getHeaderView(0);
         TextView sUsn=(TextView) headerView.findViewById(R.id.sUsn);
@@ -99,6 +100,16 @@ public class Navigation extends AppCompatActivity {
 
 
     }
+
+    private void showHomeFragment() {
+
+        FragmentManager f=getSupportFragmentManager();
+        FragmentTransaction ft=f.beginTransaction();
+        ft.replace(R.id.container,new AFragment());
+        ft.commit();
+
+    }
+
     @Override
     public void onBackPressed(){
 
@@ -175,6 +186,9 @@ public class Navigation extends AppCompatActivity {
         intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=+919448009306"));
         startActivity(intent);
     }
+
+
+
     public void goToEdit() {
         loadFragment(fragmentbb);
     }

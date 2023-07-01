@@ -11,6 +11,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.constants.ScaleTypes;
+import com.denzcoskun.imageslider.models.SlideModel;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,17 +35,18 @@ public class AFragment extends Fragment {
         // Inflate the layout for this fragment
 
         View inflateIt = inflater.inflate(R.layout.fragment_a, container, false);
+        ImageSlider imageSlider=(ImageSlider) inflateIt.findViewById(R.id.image_slider);
 
-        viewPager = (ViewPager) inflateIt.findViewById(R.id.viewPager);
-        List<Integer> imageList = new ArrayList<>();
 
-        imageList.add(R.drawable.focs);
-        imageList.add(R.drawable.sen);
-        imageList.add(R.drawable.sen1);
-        imageList.add(R.drawable.clg);
-        MyAdapter MyAdapter = new MyAdapter(imageList);
-        viewPager.setAdapter(MyAdapter);
+        List<SlideModel> slideModels=new ArrayList<>();
+        slideModels.add(new SlideModel(R.drawable.clg,"college", ScaleTypes.CENTER_CROP));
+        slideModels.add(new SlideModel(R.drawable.img,"college", ScaleTypes.CENTER_CROP));
+        slideModels.add(new SlideModel(R.drawable.img1,"college", ScaleTypes.CENTER_CROP));
+        slideModels.add(new SlideModel(R.drawable.sen,"college", ScaleTypes.CENTER_CROP));
+        slideModels.add(new SlideModel(R.drawable.sen1,"college", ScaleTypes.CENTER_CROP));
 
-        return inflater.inflate(R.layout.fragment_a, container, false);
+        imageSlider.setImageList(slideModels);
+
+        return inflateIt;
     }
 }
