@@ -27,7 +27,6 @@ public class CFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
@@ -44,7 +43,6 @@ public class CFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 ((Navigation)getActivity()).dial();
-
             }
         });
 
@@ -53,7 +51,6 @@ public class CFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 ((Navigation)getActivity()).email();
-
             }
         });
 
@@ -61,7 +58,6 @@ public class CFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 ((Navigation)getActivity()).whatsapp();
-
             }
         });
         return inflateIt;

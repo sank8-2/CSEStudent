@@ -81,7 +81,7 @@ public class Navigation extends AppCompatActivity {
                     loadFragment(new BaFragment());
                 }
                  else if (id==R.id.optFaculty) {
-                    loadFragment(new CFragment());
+                    loadFragment(new CFragmentNew());
                 }
                  else if (id==R.id.optCgpa) {
                     loadFragment(new DFragment());
