@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="5dp"
+    android:id="@+id/llRow"
     >
 
 
@@ -37,19 +38,14 @@
                 android:id="@+id/txtDesignation"
                 android:textSize="20sp"
                 />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Qualification:"
-                android:textSize="20sp"
-                />
+
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floatingActionButton"
+                    android:id="@+id/btnCall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:clickable="true"
@@ -57,21 +53,21 @@
                     app:fabSize="mini" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floatingActionButton2"
+                    android:id="@+id/btnEmail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:layout_toRightOf="@+id/floatingActionButton"
+                    android:layout_toRightOf="@+id/btnCall"
                     android:clickable="true"
                     android:src="@drawable/baseline_email_24"
                     app:fabSize="mini" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floatingActionButtona"
+                    android:id="@+id/btnWtsp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:layout_toRightOf="@+id/floatingActionButton2"
+                    android:layout_toRightOf="@+id/btnEmail"
                     android:clickable="true"
                     android:src="@drawable/whatsapplogo"
                     app:fabSize="mini" />

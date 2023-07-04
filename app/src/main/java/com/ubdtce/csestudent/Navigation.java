@@ -6,27 +6,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.app.Dialog;
+import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -85,11 +79,11 @@ public class Navigation extends AppCompatActivity {
                     loadFragment(new BaFragment());
                 }
                  else if (id==R.id.optFaculty) {
-                    loadFragment(new CFragmentNew());
+                    loadFragment(new CFragment());
                 }
                  else if (id==R.id.optCgpa) {
 //                    loadFragment(new DFragment());
-                        loadFragment(new DFragmentNew());
+                  loadFragment(new DFragmentNew());
                 }
                  else{
                     loadFragment(new EFragment());
@@ -174,10 +168,13 @@ public class Navigation extends AppCompatActivity {
 
     }
 
-    public void dial(){
+
+
+    public static void dial(){
+        Activity activity=new Activity();
         Intent intent=new Intent(Intent.ACTION_DIAL);
         intent.setData(Uri.parse("tel:9448009306"));
-        startActivity(intent);
+        activity.startActivity(intent);
     }
 
     public void email(){
