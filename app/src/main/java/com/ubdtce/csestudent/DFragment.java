@@ -9,12 +9,18 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 public class DFragment extends Fragment {
 
     public DFragment() {
         // Required empty public constructor
     }
+
+
+    String[] sem={"first","sec","third","fourth"};
+
 
 
 
@@ -28,6 +34,17 @@ public class DFragment extends Fragment {
         RecyclerView recyclerView = vw.findViewById(R.id.recylerSubject);
 
         recyclerView.setLayoutManager(new LinearLayoutManager((Navigation)getActivity()));
+
+        setContentView(R.layout.activity_main);
+
+       Spinner spinner=vw.findViewById(R.id.spinner);
+
+        ArrayAdapter<String> adapter=new ArrayAdapter<>(container.getContext(), android.R.layout.simple_spinner_item,sem);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
         return vw;
+    }
+
+    private void setContentView(int activity_main) {
     }
 }

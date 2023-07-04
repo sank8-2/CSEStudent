@@ -88,7 +88,8 @@ public class Navigation extends AppCompatActivity {
                     loadFragment(new CFragmentNew());
                 }
                  else if (id==R.id.optCgpa) {
-                    loadFragment(new DFragment());
+//                    loadFragment(new DFragment());
+                        loadFragment(new DFragmentNew());
                 }
                  else{
                     loadFragment(new EFragment());
@@ -188,6 +189,12 @@ public class Navigation extends AppCompatActivity {
     public void whatsapp(){
         Intent intent=new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=+919448009306"));
+        startActivity(intent);
+    }
+
+    public void gitHub(){
+        Intent intent=new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://github.com/sank8-2/CSEStudent"));
         startActivity(intent);
     }
 
