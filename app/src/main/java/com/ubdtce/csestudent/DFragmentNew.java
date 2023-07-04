@@ -62,7 +62,19 @@ public class DFragmentNew extends Fragment {
             public void onClick(View v) {
                 //Toast.makeText((Navigation)getActivity(), "WORkS", Toast.LENGTH_SHORT).show();
                count=0;
-             //sum=0;
+
+
+
+
+
+
+
+
+
+
+
+
+                sum=0;
                 num1=sem1.getText().toString();
                 num2=sem2.getText().toString();
                 num3=sem3.getText().toString();
@@ -109,11 +121,24 @@ public class DFragmentNew extends Fragment {
                     sum+=Float.parseFloat(num8);
 
                 }
-                sum=sum/count;
+
+                if(!sum) {
+                    sum = sum / count;
+                    String ans = decimalFormat.format(sum);
+                    result.setText(ans);
+                }else {
+                    result.setText("NaN");
+                }
 
 
-                String ans=decimalFormat.format(sum);
-                result.setText(ans);
+                sem1.setText("");
+                sem2.setText("");
+                sem3.setText("");
+                sem4.setText("");
+                sem5.setText("");
+                sem6.setText("");
+                sem7.setText("");
+                sem8.setText("");
 
             }
         });
