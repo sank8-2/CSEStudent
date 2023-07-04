@@ -122,7 +122,7 @@ public class DFragmentNew extends Fragment {
 
                 }
 
-                if(!sum) {
+                if(!(sum==0)) {
                     sum = sum / count;
                     String ans = decimalFormat.format(sum);
                     result.setText(ans);
