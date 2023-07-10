@@ -1,3 +1,4 @@
+/*
 package com.ubdtce.csestudent;
 
 import static android.app.PendingIntent.getActivity;
@@ -157,3 +158,4 @@ public class RecyclerFaculty extends RecyclerView.Adapter<RecyclerFaculty.ViewHo
     }
 
 }
+*/

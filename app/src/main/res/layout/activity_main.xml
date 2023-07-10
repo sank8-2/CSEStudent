@@ -17,4 +17,5 @@
         android:contentDescription="@string/logo"
         tools:ignore="ExtraText" />
 
+
 </androidx.appcompat.widget.LinearLayoutCompat>

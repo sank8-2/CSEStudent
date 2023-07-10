@@ -36,7 +36,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Shreedhara K S"
+                    android:text="Dr.Shreedhara K.S."
                     android:textStyle="bold"
                     android:textSize="24sp"
                     />
@@ -44,13 +44,13 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Designation: Head of the department (HOD)"
+                    android:text="Designation: Chairperson and Professor"
                     android:textSize="20sp"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Qualification:"
+                    android:text="Qualification: B.E,M.Tech.,Ph.D."
                     android:textSize="20sp"
                     />
 
@@ -110,7 +110,7 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Shreedhara K S"
+                     android:text="Dr.Mohammed Rafi"
                      android:textStyle="bold"
                      android:textSize="24sp"
                      />
@@ -118,13 +118,13 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Designation: Head of the department (HOD)"
+                     android:text="Designation:	Professor"
                      android:textSize="20sp"
                      />
                  <TextView
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
-                     android:text="Qualification:"
+                     android:text="Qualification: BE,ME,Ph.D"
                      android:textSize="20sp"
                      />
 
@@ -182,7 +182,7 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Shreedhara K S"
+                     android:text="Dr.Shrinivasa Naik C.L."
                      android:textStyle="bold"
                      android:textSize="24sp"
                      />
@@ -190,13 +190,13 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Designation: Head of the department (HOD)"
+                     android:text="Designation:Professor"
                      android:textSize="20sp"
                      />
                  <TextView
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
-                     android:text="Qualification:"
+                     android:text="Qualification:M.E, PhD(IITG)"
                      android:textSize="20sp"
                      />
 
@@ -254,7 +254,7 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Shreedhara K S"
+                     android:text="	Dr.B.N.Veerappa"
                      android:textStyle="bold"
                      android:textSize="24sp"
                      />
@@ -262,13 +262,13 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Designation: Head of the department (HOD)"
+                     android:text="Designation:Professor"
                      android:textSize="20sp"
                      />
                  <TextView
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
-                     android:text="Qualification:"
+                     android:text="Qualification:BE(Electrical Engg),MTech(Computer Engg),PhD"
                      android:textSize="20sp"
                      />
 
@@ -331,7 +331,7 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Shreedhara K S"
+                     android:text="Ms.Anitha.G"
                      android:textStyle="bold"
                      android:textSize="24sp"
                      />
@@ -339,7 +339,7 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Designation: Head of the department (HOD)"
+                     android:text="Designation: Associate Professor"
                      android:textSize="20sp"
                      />
                  <TextView
@@ -403,7 +403,7 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Shreedhara K S"
+                     android:text="Ms.Geetha N.B."
                      android:textStyle="bold"
                      android:textSize="24sp"
                      />
@@ -411,13 +411,13 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Designation: Head of the department (HOD)"
+                     android:text="Designation:	Assistant Professor"
                      android:textSize="20sp"
                      />
                  <TextView
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
-                     android:text="Qualification:"
+                     android:text="Qualification:B.E.,M.TECH."
                      android:textSize="20sp"
                      />
 
@@ -475,7 +475,7 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Shreedhara K S"
+                     android:text="	Ms.Kavitha G."
                      android:textStyle="bold"
                      android:textSize="24sp"
                      />
@@ -483,13 +483,13 @@
                  <TextView
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
-                     android:text="Designation: Head of the department (HOD)"
+                     android:text="Designation: M.Tech."
                      android:textSize="20sp"
                      />
                  <TextView
                      android:layout_width="wrap_content"
                      android:layout_height="wrap_content"
-                     android:text="Qualification:"
+                     android:text="Qualification:Assistant Professor"
                      android:textSize="20sp"
                      />
 

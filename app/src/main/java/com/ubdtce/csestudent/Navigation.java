@@ -168,24 +168,21 @@ public class Navigation extends AppCompatActivity {
 
     }
 
-
-
-    public static void dial(){
-        Activity activity=new Activity();
+    public void dial(String num){
         Intent intent=new Intent(Intent.ACTION_DIAL);
-        intent.setData(Uri.parse("tel:9448009306"));
-        activity.startActivity(intent);
-    }
-
-    public void email(){
-        Intent intent=new Intent(Intent.ACTION_SENDTO);
-        intent.setData(Uri.parse("mailto:shradhapokle02@gmail.com"));
+        intent.setData(Uri.parse("tel:"+num));
         startActivity(intent);
     }
 
-    public void whatsapp(){
+    public void email(String mail){
+        Intent intent=new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:"+mail));
+        startActivity(intent);
+    }
+
+    public void whatsapp(String num){
         Intent intent=new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=+919448009306"));
+        intent.setData(Uri.parse("http://api.whatsapp.com/send?phone=+91"+num));
         startActivity(intent);
     }
 
