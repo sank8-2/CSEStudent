@@ -145,7 +145,7 @@ public class CFragment extends Fragment {
         btnemail4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((Navigation)getActivity()).email("shradhapokle02@gmail.com");
+                ((Navigation)getActivity()).email("sample@text.com");
             }
         });
 
@@ -172,38 +172,38 @@ public class CFragment extends Fragment {
         btnWhatsapp1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((Navigation)getActivity()).whatsapp("9448009306");
+                ((Navigation)getActivity()).whatsapp("9844747919");
             }
         });
         btnWhatsapp2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((Navigation)getActivity()).whatsapp("9448009306");
+                ((Navigation)getActivity()).whatsapp("7411780882");
             }
         });
         btnWhatsapp3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((Navigation)getActivity()).whatsapp("9448009306");
+                ((Navigation)getActivity()).whatsapp("9448109123");
             }
         });
         btnWhatsapp4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((Navigation)getActivity()).whatsapp("9448009306");
+                ((Navigation)getActivity()).whatsapp("9880309712");
             }
         });
         btnWhatsapp5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((Navigation)getActivity()).whatsapp("9448009306");
+                ((Navigation)getActivity()).whatsapp("9480794017");
             }
         });
 
         btnWhatsapp6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((Navigation)getActivity()).whatsapp("9448009306");
+                ((Navigation)getActivity()).whatsapp("9480225785");
             }
         });
         return inflateIt;

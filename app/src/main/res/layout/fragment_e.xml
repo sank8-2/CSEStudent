@@ -51,7 +51,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Contact: sankethkumarbg1995@gmail.com + shradhapokle02@gmail.com"
+        android:text="Contact: sankethkumarbg1995@gmail.com\n\tshradhapokle02@gmail.com"
         android:textSize="15sp"
         android:layout_marginTop="10dp"
         />
